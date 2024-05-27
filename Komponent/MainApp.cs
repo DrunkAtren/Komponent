@@ -136,6 +136,8 @@ namespace Komponent
         {
             ClearTable();
 
+            imp_dat.
+
         }
 
         private void btnGoToEditColumn_Click(object sender, EventArgs e)

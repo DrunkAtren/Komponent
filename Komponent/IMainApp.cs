@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Komponent;
 
 namespace Komponent
 {
@@ -20,7 +21,7 @@ namespace Komponent
 
         DataGridViewColumn GetColumnById(int Index);
 
-        import_datas import_datas = new import_datas();
+        imp_dat = new import_datas(dgvDataSetMainApp);
 
         int GetRowCount();
 
