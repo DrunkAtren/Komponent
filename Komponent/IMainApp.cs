@@ -9,6 +9,7 @@ namespace Komponent
 {
     public interface IMainApp
     {
+
         DataGridViewRowCollection GetRows();
 
         DataGridViewColumnCollection GetColumns();
@@ -18,6 +19,8 @@ namespace Komponent
         List<string> GetColumnData(string columnName);
 
         DataGridViewColumn GetColumnById(int Index);
+
+        import_datas import_datas = new import_datas();
 
         int GetRowCount();
 

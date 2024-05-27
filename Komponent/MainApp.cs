@@ -135,32 +135,7 @@ namespace Komponent
         private void btnDefaultDataSet_Click(object sender, EventArgs e)
         {
             ClearTable();
-            // Dodaj przykładowe kolumny
-            dgvDataSetMainApp.Columns.Add("ID", "ID");
-            dgvDataSetMainApp.Columns.Add("Name", "Name");
-            dgvDataSetMainApp.Columns.Add("Age", "Age");
 
-            // Dodaj przykładowe dane
-            dgvDataSetMainApp.Rows.Add("1", "John", "30");
-            dgvDataSetMainApp.Rows.Add("2", "Alice", "25");
-            dgvDataSetMainApp.Rows.Add("3", "Bob", "40");
-            dgvDataSetMainApp.Rows.Add("4", "Emily", "35");
-            dgvDataSetMainApp.Rows.Add("5", "Michael", "45");
-            dgvDataSetMainApp.Rows.Add("6", "Sarah", "28");
-            dgvDataSetMainApp.Rows.Add("7", "David", "33");
-            dgvDataSetMainApp.Rows.Add("8", "Emma", "22");
-            dgvDataSetMainApp.Rows.Add("9", "James", "50");
-            dgvDataSetMainApp.Rows.Add("10", "Olivia", "27");
-            dgvDataSetMainApp.Rows.Add("11", "William", "38");
-            dgvDataSetMainApp.Rows.Add("12", "Sophia", "42");
-            dgvDataSetMainApp.Rows.Add("13", "Benjamin", "29");
-            dgvDataSetMainApp.Rows.Add("14", "Charlotte", "32");
-            dgvDataSetMainApp.Rows.Add("15", "Daniel", "37");
-            dgvDataSetMainApp.Rows.Add("16", "Ava", "24");
-            dgvDataSetMainApp.Rows.Add("17", "Matthew", "31");
-            dgvDataSetMainApp.Rows.Add("18", "Grace", "26");
-            dgvDataSetMainApp.Rows.Add("19", "Ethan", "41");
-            dgvDataSetMainApp.Rows.Add("20", "Lily", "34");
         }
 
         private void btnGoToEditColumn_Click(object sender, EventArgs e)
