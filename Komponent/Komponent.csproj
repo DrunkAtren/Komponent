@@ -71,6 +71,7 @@
       <DependentUpon>Histogram.cs</DependentUpon>
     </Compile>
     <Compile Include="IMainApp.cs" />
+    <Compile Include="import_table.cs" />
     <Compile Include="MainApp.cs">
       <SubType>Form</SubType>
     </Compile>
