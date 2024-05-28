@@ -1,12 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Diagnostics;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Komponent
@@ -82,7 +75,7 @@ namespace Komponent
             setComboBox();
             imp_dat = new import_datas(dgvDataSetMainApp);
             //exp_dat = new export_to_file();
-            
+
 
 
             exp_dat = new export_to_file(fileName, fileType);
@@ -134,7 +127,7 @@ namespace Komponent
 
         private void MainApp_Load(object sender, EventArgs e)
         {
-  
+
         }
 
         private void btnAddDataSet_Click(object sender, EventArgs e)
@@ -209,7 +202,7 @@ namespace Komponent
             fileType.Items.Add("text");
             fileType.Items.Add("csv");
             fileType.Items.Add("json");
-            
+
 
         }
 
@@ -218,40 +211,18 @@ namespace Komponent
 
         }
 
-        
+
 
         private void btnGoToHistogram_Click(object sender, EventArgs e)
         {
-                var myForm = new Histogram(this);
-                myForm.Show();
+            var myForm = new Histogram(this);
+            myForm.Show();
 
         }
 
-        /*public DataTable GetDataTableFromDataGridView()
-        {
-            DataTable dataTable = new DataTable();
-
-            foreach (DataGridViewColumn column in dgvDataSetMainApp.Columns)
-            {
-                dataTable.Columns.Add(column.HeaderText, typeof(string));
-            }
-
-            foreach (DataGridViewRow row in dgvDataSetMainApp.Rows)
-            {
-                DataRow dataRow = dataTable.NewRow();
-                foreach (DataGridViewCell cell in row.Cells)
-                {
-                    dataRow[cell.ColumnIndex] = cell.Value?.ToString() ?? string.Empty;
-                }
-                dataTable.Rows.Add(dataRow);
-            }
-
-            return dataTable;
-        }*/
-
         private void columnChooser_SelectedIndexChanged(object sender, EventArgs e)
         {
-            
+
         }
 
         private void fileName_TextChanged(object sender, EventArgs e)
