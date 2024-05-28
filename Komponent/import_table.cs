@@ -62,10 +62,10 @@ namespace Komponent
                 // Dodaj kolumny do DataGridView, jeśli jeszcze ich nie ma
                 if (_dataGridView.Columns.Count == 0)
                 {
-                    _dataGridView.Columns.Add("imie", "Imię");
+                    _dataGridView.Columns.Add("imie", "Imie");
                     _dataGridView.Columns.Add("nazwisko", "Nazwisko");
                     _dataGridView.Columns.Add("ulica", "Ulica");
-                    _dataGridView.Columns.Add("miejsce_zamieszkania", "Miejsce Zamieszkania");
+                    _dataGridView.Columns.Add("miejsce zamieszkania", "Miejsce Zamieszkania");
                 }
 
                 if (import_extension.Equals("json", StringComparison.OrdinalIgnoreCase))

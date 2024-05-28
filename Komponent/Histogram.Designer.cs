@@ -88,7 +88,7 @@
             // 
             this.histogramPanel.Location = new System.Drawing.Point(145, 50);
             this.histogramPanel.Name = "histogramPanel";
-            this.histogramPanel.Size = new System.Drawing.Size(1158, 492);
+            this.histogramPanel.Size = new System.Drawing.Size(1158, 506);
             this.histogramPanel.TabIndex = 4;
             this.histogramPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.histogramPanel_Paint);
             // 
@@ -123,7 +123,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1315, 554);
+            this.ClientSize = new System.Drawing.Size(1315, 568);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.columnChooser);
             this.Controls.Add(this.label1);
