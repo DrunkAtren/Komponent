@@ -41,6 +41,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.maxColumnHeight = new System.Windows.Forms.NumericUpDown();
             this.btnClearTable = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDataSetMainApp)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.maxColumnHeight)).BeginInit();
             this.SuspendLayout();
@@ -81,7 +82,7 @@
             // 
             // btnGoToEditColumn
             // 
-            this.btnGoToEditColumn.Location = new System.Drawing.Point(497, 19);
+            this.btnGoToEditColumn.Location = new System.Drawing.Point(497, 20);
             this.btnGoToEditColumn.Name = "btnGoToEditColumn";
             this.btnGoToEditColumn.Size = new System.Drawing.Size(127, 23);
             this.btnGoToEditColumn.TabIndex = 4;
@@ -120,7 +121,7 @@
             // 
             // btnDefaultDataSet
             // 
-            this.btnDefaultDataSet.Location = new System.Drawing.Point(708, 19);
+            this.btnDefaultDataSet.Location = new System.Drawing.Point(708, 20);
             this.btnDefaultDataSet.Name = "btnDefaultDataSet";
             this.btnDefaultDataSet.Size = new System.Drawing.Size(157, 23);
             this.btnDefaultDataSet.TabIndex = 9;
@@ -161,7 +162,7 @@
             // 
             // btnClearTable
             // 
-            this.btnClearTable.Location = new System.Drawing.Point(871, 20);
+            this.btnClearTable.Location = new System.Drawing.Point(995, 20);
             this.btnClearTable.Name = "btnClearTable";
             this.btnClearTable.Size = new System.Drawing.Size(157, 23);
             this.btnClearTable.TabIndex = 14;
@@ -169,11 +170,22 @@
             this.btnClearTable.UseVisualStyleBackColor = true;
             this.btnClearTable.Click += new System.EventHandler(this.btnClearTable_Click);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(871, 20);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(118, 23);
+            this.button1.TabIndex = 15;
+            this.button1.Text = "Eksportuj tabele";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // MainApp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1376, 443);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btnClearTable);
             this.Controls.Add(this.maxColumnHeight);
             this.Controls.Add(this.label2);
@@ -213,5 +225,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.NumericUpDown maxColumnHeight;
         private System.Windows.Forms.Button btnClearTable;
+        private System.Windows.Forms.Button button1;
     }
 }

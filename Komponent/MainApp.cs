@@ -12,6 +12,8 @@ namespace Komponent
 {
     public partial class MainApp : Form, IMainApp
     {
+        private import_datas imp_dat;
+        private export_to_file exp_dat;
         public DataGridViewRowCollection GetRows()
         {
             return dgvDataSetMainApp.Rows;
@@ -76,6 +78,8 @@ namespace Komponent
         public MainApp()
         {
             InitializeComponent();
+            imp_dat = new import_datas(dgvDataSetMainApp);
+            exp_dat = new export_to_file();
         }
 
         public List<string> GetColumnData(string columnName)
@@ -136,7 +140,7 @@ namespace Komponent
         {
             ClearTable();
 
-            imp_dat.
+            imp_dat.ImportData();
 
         }
 
@@ -177,6 +181,11 @@ namespace Komponent
         private void btnClearTable_Click(object sender, EventArgs e)
         {
             ClearTable();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            exp_dat.ExportDataCreate(dgvDataSetMainApp);
         }
     }
 }

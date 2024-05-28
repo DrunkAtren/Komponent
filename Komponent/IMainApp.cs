@@ -21,8 +21,6 @@ namespace Komponent
 
         DataGridViewColumn GetColumnById(int Index);
 
-        imp_dat = new import_datas(dgvDataSetMainApp);
-
         int GetRowCount();
 
         int GetColumnCount();

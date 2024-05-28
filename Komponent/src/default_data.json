@@ -1,0 +1,236 @@
+[
+    {
+        "imie": "Anna",
+        "nazwisko": "Zieliński",
+        "ulica": "Mickiewicza",
+        "miejsce_zamieszkania": "Katowice"
+    },
+    {
+        "imie": "Tomasz",
+        "nazwisko": "Kowalczyk",
+        "ulica": "Mickiewicza",
+        "miejsce_zamieszkania": "Lublin"
+    },
+    {
+        "imie": "Jan",
+        "nazwisko": "Woźniak",
+        "ulica": "Lipowa",
+        "miejsce_zamieszkania": "Katowice"
+    },
+    {
+        "imie": "Maria",
+        "nazwisko": "Zieliński",
+        "ulica": "Kościuszki",
+        "miejsce_zamieszkania": "Gdańsk"
+    },
+    {
+        "imie": "Tomasz",
+        "nazwisko": "Nowak",
+        "ulica": "Leśna",
+        "miejsce_zamieszkania": "Lublin"
+    },
+    {
+        "imie": "Andrzej",
+        "nazwisko": "Woźniak",
+        "ulica": "Lipowa",
+        "miejsce_zamieszkania": "Warszawa"
+    },
+    {
+        "imie": "Jerzy",
+        "nazwisko": "Kamiński",
+        "ulica": "Kościelna",
+        "miejsce_zamieszkania": "Gdańsk"
+    },
+    {
+        "imie": "Piotr",
+        "nazwisko": "Lewandowski",
+        "ulica": "Kościelna",
+        "miejsce_zamieszkania": "Gdańsk"
+    },
+    {
+        "imie": "Andrzej",
+        "nazwisko": "Nowak",
+        "ulica": "Krótka",
+        "miejsce_zamieszkania": "Kraków"
+    },
+    {
+        "imie": "Krzysztof",
+        "nazwisko": "Lewandowski",
+        "ulica": "Krótka",
+        "miejsce_zamieszkania": "Kraków"
+    },
+    {
+        "imie": "Jerzy",
+        "nazwisko": "Wójcik",
+        "ulica": "Kościelna",
+        "miejsce_zamieszkania": "Łódź"
+    },
+    {
+        "imie": "Katarzyna",
+        "nazwisko": "Kamiński",
+        "ulica": "Kościelna",
+        "miejsce_zamieszkania": "Bydgoszcz"
+    },
+    {
+        "imie": "Piotr",
+        "nazwisko": "Szymański",
+        "ulica": "Kościuszki",
+        "miejsce_zamieszkania": "Gdańsk"
+    },
+    {
+        "imie": "Zofia",
+        "nazwisko": "Kowalczyk",
+        "ulica": "Leśna",
+        "miejsce_zamieszkania": "Poznań"
+    },
+    {
+        "imie": "Tomasz",
+        "nazwisko": "Kowalski",
+        "ulica": "Mickiewicza",
+        "miejsce_zamieszkania": "Katowice"
+    },
+    {
+        "imie": "Katarzyna",
+        "nazwisko": "Kowalczyk",
+        "ulica": "Krótka",
+        "miejsce_zamieszkania": "Łódź"
+    },
+    {
+        "imie": "Piotr",
+        "nazwisko": "Kamiński",
+        "ulica": "Ogrodowa",
+        "miejsce_zamieszkania": "Lublin"
+    },
+    {
+        "imie": "Anna",
+        "nazwisko": "Woźniak",
+        "ulica": "Ogrodowa",
+        "miejsce_zamieszkania": "Kraków"
+    },
+    {
+        "imie": "Anna",
+        "nazwisko": "Wójcik",
+        "ulica": "Lipowa",
+        "miejsce_zamieszkania": "Lublin"
+    },
+    {
+        "imie": "Katarzyna",
+        "nazwisko": "Lewandowski",
+        "ulica": "Słoneczna",
+        "miejsce_zamieszkania": "Szczecin"
+    },
+    {
+        "imie": "Piotr",
+        "nazwisko": "Wójcik",
+        "ulica": "Lipowa",
+        "miejsce_zamieszkania": "Wrocław"
+    },
+    {
+        "imie": "Katarzyna",
+        "nazwisko": "Wiśniewski",
+        "ulica": "Szkolna",
+        "miejsce_zamieszkania": "Wrocław"
+    },
+    {
+        "imie": "Maria",
+        "nazwisko": "Zieliński",
+        "ulica": "Mickiewicza",
+        "miejsce_zamieszkania": "Kraków"
+    },
+    {
+        "imie": "Maria",
+        "nazwisko": "Wiśniewski",
+        "ulica": "Kościuszki",
+        "miejsce_zamieszkania": "Katowice"
+    },
+    {
+        "imie": "Piotr",
+        "nazwisko": "Kowalczyk",
+        "ulica": "Słoneczna",
+        "miejsce_zamieszkania": "Łódź"
+    },
+    {
+        "imie": "Katarzyna",
+        "nazwisko": "Lewandowski",
+        "ulica": "Leśna",
+        "miejsce_zamieszkania": "Kraków"
+    },
+    {
+        "imie": "Katarzyna",
+        "nazwisko": "Lewandowski",
+        "ulica": "Krótka",
+        "miejsce_zamieszkania": "Szczecin"
+    },
+    {
+        "imie": "Maria",
+        "nazwisko": "Kamiński",
+        "ulica": "Słoneczna",
+        "miejsce_zamieszkania": "Poznań"
+    },
+    {
+        "imie": "Tomasz",
+        "nazwisko": "Kowalczyk",
+        "ulica": "Polna",
+        "miejsce_zamieszkania": "Kraków"
+    },
+    {
+        "imie": "Jerzy",
+        "nazwisko": "Zieliński",
+        "ulica": "Lipowa",
+        "miejsce_zamieszkania": "Poznań"
+    },
+    {
+        "imie": "Anna",
+        "nazwisko": "Wiśniewski",
+        "ulica": "Ogrodowa",
+        "miejsce_zamieszkania": "Poznań"
+    },
+    {
+        "imie": "Krzysztof",
+        "nazwisko": "Woźniak",
+        "ulica": "Mickiewicza",
+        "miejsce_zamieszkania": "Łódź"
+    },
+    {
+        "imie": "Tomasz",
+        "nazwisko": "Zieliński",
+        "ulica": "Słoneczna",
+        "miejsce_zamieszkania": "Katowice"
+    },
+    {
+        "imie": "Jerzy",
+        "nazwisko": "Kamiński",
+        "ulica": "Leśna",
+        "miejsce_zamieszkania": "Szczecin"
+    },
+    {
+        "imie": "Piotr",
+        "nazwisko": "Nowak",
+        "ulica": "Lipowa",
+        "miejsce_zamieszkania": "Łódź"
+    },
+    {
+        "imie": "Piotr",
+        "nazwisko": "Wójcik",
+        "ulica": "Leśna",
+        "miejsce_zamieszkania": "Wrocław"
+    },
+    {
+        "imie": "Piotr",
+        "nazwisko": "Kowalczyk",
+        "ulica": "Lipowa",
+        "miejsce_zamieszkania": "Katowice"
+    },
+    {
+        "imie": "Zofia",
+        "nazwisko": "Wójcik",
+        "ulica": "Mickiewicza",
+        "miejsce_zamieszkania": "Łódź"
+    },
+    {
+        "imie": "Krzysztof",
+        "nazwisko": "Kowalczyk",
+        "ulica": "Kościuszki",
+        "miejsce_zamieszkania": "Gdańsk"
+    }
+]
