@@ -1,9 +1,8 @@
-using System.Text;
+using Newtonsoft.Json.Linq;
 using System;
 using System.IO;
+using System.Text;
 using System.Windows.Forms;
-using Newtonsoft.Json.Linq;
-using System.Windows.Forms.VisualStyles;
 
 namespace Komponent
 {
@@ -30,11 +29,6 @@ namespace Komponent
             export_file_name = fileName.Text;
             //export_destination = fileDestination.Text;
         }
-
-        
-
-        
-
 
         public string getFilename()
         {
@@ -72,7 +66,6 @@ namespace Komponent
             JSON,
             TEXT
         }
-
 
         private static void ExportToJSON(DataGridView dataGridView, string fileName)
         {
