@@ -68,6 +68,7 @@
             this.btnAddColumn.Location = new System.Drawing.Point(156, 28);
             this.btnAddColumn.Margin = new System.Windows.Forms.Padding(4);
             this.btnAddColumn.Name = "btnAddColumn";
+            this.btnAddColumn.Size = new System.Drawing.Size(33, 28);
             this.btnAddColumn.Size = new System.Drawing.Size(25, 25);
             this.btnAddColumn.TabIndex = 1;
             this.btnAddColumn.Text = ">";
@@ -112,9 +113,12 @@
             this.btnGoToHistogram.TabIndex = 5;
             this.btnGoToHistogram.Text = "Histogram >";
             this.btnGoToHistogram.UseVisualStyleBackColor = true;
+            this.btnGoToHistogram.Click += new System.EventHandler(this.btnGoToHistogram_Click);
             // 
             // btnGoToCreateDataSet
             // 
+            this.btnGoToCreateDataSet.Location = new System.Drawing.Point(512, 25);
+            this.btnGoToCreateDataSet.Margin = new System.Windows.Forms.Padding(4);
             this.btnGoToCreateDataSet.Location = new System.Drawing.Point(701, 26);
             this.btnGoToCreateDataSet.Margin = new System.Windows.Forms.Padding(4);
             this.btnGoToCreateDataSet.Name = "btnGoToCreateDataSet";

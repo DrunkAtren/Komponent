@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -133,7 +134,7 @@ namespace Komponent
 
         private void MainApp_Load(object sender, EventArgs e)
         {
-
+  
         }
 
         private void btnAddDataSet_Click(object sender, EventArgs e)
@@ -193,6 +194,7 @@ namespace Komponent
 
         private void btnClearTable_Click(object sender, EventArgs e)
         {
+
             ClearTable();
         }
 
@@ -217,5 +219,39 @@ namespace Komponent
         }
 
         
+
+        private void btnGoToHistogram_Click(object sender, EventArgs e)
+        {
+                var myForm = new Histogram(this);
+                myForm.Show();
+
+        }
+
+        /*public DataTable GetDataTableFromDataGridView()
+        {
+            DataTable dataTable = new DataTable();
+
+            foreach (DataGridViewColumn column in dgvDataSetMainApp.Columns)
+            {
+                dataTable.Columns.Add(column.HeaderText, typeof(string));
+            }
+
+            foreach (DataGridViewRow row in dgvDataSetMainApp.Rows)
+            {
+                DataRow dataRow = dataTable.NewRow();
+                foreach (DataGridViewCell cell in row.Cells)
+                {
+                    dataRow[cell.ColumnIndex] = cell.Value?.ToString() ?? string.Empty;
+                }
+                dataTable.Rows.Add(dataRow);
+            }
+
+            return dataTable;
+        }*/
+
+        private void columnChooser_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            
+        }
     }
 }
