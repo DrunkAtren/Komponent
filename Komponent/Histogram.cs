@@ -134,5 +134,10 @@ namespace Komponent
                 }
             }
         }
+
+        private void Histogram_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
