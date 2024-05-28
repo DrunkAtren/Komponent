@@ -66,16 +66,18 @@
             // cbColumnForEdit
             // 
             this.cbColumnForEdit.FormattingEnabled = true;
-            this.cbColumnForEdit.Location = new System.Drawing.Point(12, 28);
+            this.cbColumnForEdit.Location = new System.Drawing.Point(16, 34);
+            this.cbColumnForEdit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cbColumnForEdit.Name = "cbColumnForEdit";
-            this.cbColumnForEdit.Size = new System.Drawing.Size(121, 21);
+            this.cbColumnForEdit.Size = new System.Drawing.Size(160, 24);
             this.cbColumnForEdit.TabIndex = 0;
             // 
             // btnSliceLeft
             // 
-            this.btnSliceLeft.Location = new System.Drawing.Point(64, 87);
+            this.btnSliceLeft.Location = new System.Drawing.Point(85, 107);
+            this.btnSliceLeft.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnSliceLeft.Name = "btnSliceLeft";
-            this.btnSliceLeft.Size = new System.Drawing.Size(95, 23);
+            this.btnSliceLeft.Size = new System.Drawing.Size(127, 28);
             this.btnSliceLeft.TabIndex = 1;
             this.btnSliceLeft.Text = "Utnij lewo";
             this.btnSliceLeft.UseVisualStyleBackColor = true;
@@ -83,16 +85,18 @@
             // 
             // LeftSlice
             // 
-            this.LeftSlice.Location = new System.Drawing.Point(13, 87);
+            this.LeftSlice.Location = new System.Drawing.Point(17, 107);
+            this.LeftSlice.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.LeftSlice.Name = "LeftSlice";
-            this.LeftSlice.Size = new System.Drawing.Size(42, 20);
+            this.LeftSlice.Size = new System.Drawing.Size(56, 22);
             this.LeftSlice.TabIndex = 2;
             // 
             // btnSliceRight
             // 
-            this.btnSliceRight.Location = new System.Drawing.Point(165, 84);
+            this.btnSliceRight.Location = new System.Drawing.Point(220, 103);
+            this.btnSliceRight.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnSliceRight.Name = "btnSliceRight";
-            this.btnSliceRight.Size = new System.Drawing.Size(95, 23);
+            this.btnSliceRight.Size = new System.Drawing.Size(127, 28);
             this.btnSliceRight.TabIndex = 3;
             this.btnSliceRight.Text = "Utnij Prawo";
             this.btnSliceRight.UseVisualStyleBackColor = true;
@@ -100,9 +104,10 @@
             // 
             // btnShuffle
             // 
-            this.btnShuffle.Location = new System.Drawing.Point(10, 55);
+            this.btnShuffle.Location = new System.Drawing.Point(13, 68);
+            this.btnShuffle.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnShuffle.Name = "btnShuffle";
-            this.btnShuffle.Size = new System.Drawing.Size(123, 23);
+            this.btnShuffle.Size = new System.Drawing.Size(164, 28);
             this.btnShuffle.TabIndex = 5;
             this.btnShuffle.Text = "Przetasuj";
             this.btnShuffle.UseVisualStyleBackColor = true;
@@ -110,9 +115,10 @@
             // 
             // btnMirror
             // 
-            this.btnMirror.Location = new System.Drawing.Point(141, 55);
+            this.btnMirror.Location = new System.Drawing.Point(188, 68);
+            this.btnMirror.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnMirror.Name = "btnMirror";
-            this.btnMirror.Size = new System.Drawing.Size(123, 23);
+            this.btnMirror.Size = new System.Drawing.Size(164, 28);
             this.btnMirror.TabIndex = 6;
             this.btnMirror.Text = "Lustro";
             this.btnMirror.UseVisualStyleBackColor = true;
@@ -120,9 +126,10 @@
             // 
             // btnAddNewColumn
             // 
-            this.btnAddNewColumn.Location = new System.Drawing.Point(40, 293);
+            this.btnAddNewColumn.Location = new System.Drawing.Point(53, 361);
+            this.btnAddNewColumn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnAddNewColumn.Name = "btnAddNewColumn";
-            this.btnAddNewColumn.Size = new System.Drawing.Size(99, 23);
+            this.btnAddNewColumn.Size = new System.Drawing.Size(132, 28);
             this.btnAddNewColumn.TabIndex = 7;
             this.btnAddNewColumn.Text = "Dodaj Kolumne";
             this.btnAddNewColumn.UseVisualStyleBackColor = true;
@@ -131,91 +138,103 @@
             // cbFirstColumn
             // 
             this.cbFirstColumn.FormattingEnabled = true;
-            this.cbFirstColumn.Location = new System.Drawing.Point(18, 183);
+            this.cbFirstColumn.Location = new System.Drawing.Point(24, 225);
+            this.cbFirstColumn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cbFirstColumn.Name = "cbFirstColumn";
-            this.cbFirstColumn.Size = new System.Drawing.Size(121, 21);
+            this.cbFirstColumn.Size = new System.Drawing.Size(160, 24);
             this.cbFirstColumn.TabIndex = 8;
             // 
             // cbSecondColumn
             // 
             this.cbSecondColumn.FormattingEnabled = true;
-            this.cbSecondColumn.Location = new System.Drawing.Point(147, 183);
+            this.cbSecondColumn.Location = new System.Drawing.Point(196, 225);
+            this.cbSecondColumn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cbSecondColumn.Name = "cbSecondColumn";
-            this.cbSecondColumn.Size = new System.Drawing.Size(121, 21);
+            this.cbSecondColumn.Size = new System.Drawing.Size(160, 24);
             this.cbSecondColumn.TabIndex = 9;
             // 
             // tbNewColumn
             // 
-            this.tbNewColumn.Location = new System.Drawing.Point(21, 267);
+            this.tbNewColumn.Location = new System.Drawing.Point(28, 329);
+            this.tbNewColumn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tbNewColumn.Name = "tbNewColumn";
-            this.tbNewColumn.Size = new System.Drawing.Size(121, 20);
+            this.tbNewColumn.Size = new System.Drawing.Size(160, 22);
             this.tbNewColumn.TabIndex = 10;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(18, 167);
+            this.label1.Location = new System.Drawing.Point(24, 206);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(93, 13);
+            this.label1.Size = new System.Drawing.Size(116, 16);
             this.label1.TabIndex = 11;
             this.label1.Text = "Pierwsza Kolumna";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(145, 169);
+            this.label2.Location = new System.Drawing.Point(193, 208);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(80, 13);
+            this.label2.Size = new System.Drawing.Size(99, 16);
             this.label2.TabIndex = 12;
             this.label2.Text = "Druga Kolumna";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(19, 251);
+            this.label3.Location = new System.Drawing.Point(25, 309);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(79, 13);
+            this.label3.Size = new System.Drawing.Size(97, 16);
             this.label3.TabIndex = 13;
             this.label3.Text = "Nowa Kolumna";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(9, 12);
+            this.label4.Location = new System.Drawing.Point(12, 15);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(94, 13);
+            this.label4.Size = new System.Drawing.Size(118, 16);
             this.label4.TabIndex = 14;
             this.label4.Text = "Kolumna do Edycji";
             // 
             // tbNewItem
             // 
-            this.tbNewItem.Location = new System.Drawing.Point(18, 223);
+            this.tbNewItem.Location = new System.Drawing.Point(24, 274);
+            this.tbNewItem.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tbNewItem.Name = "tbNewItem";
-            this.tbNewItem.Size = new System.Drawing.Size(121, 20);
+            this.tbNewItem.Size = new System.Drawing.Size(160, 22);
             this.tbNewItem.TabIndex = 15;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(18, 207);
+            this.label5.Location = new System.Drawing.Point(24, 255);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(98, 13);
+            this.label5.Size = new System.Drawing.Size(124, 16);
             this.label5.TabIndex = 17;
             this.label5.Text = "Dodatek pomiedzy ";
             // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(297, 12);
+            this.dataGridView1.Location = new System.Drawing.Point(396, 15);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(327, 304);
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.Size = new System.Drawing.Size(436, 374);
             this.dataGridView1.TabIndex = 18;
             // 
             // btnNumber
             // 
-            this.btnNumber.Location = new System.Drawing.Point(165, 129);
+            this.btnNumber.Location = new System.Drawing.Point(220, 159);
+            this.btnNumber.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnNumber.Name = "btnNumber";
-            this.btnNumber.Size = new System.Drawing.Size(60, 23);
+            this.btnNumber.Size = new System.Drawing.Size(80, 28);
             this.btnNumber.TabIndex = 16;
             this.btnNumber.Text = "Telefon";
             this.btnNumber.UseVisualStyleBackColor = true;
@@ -223,9 +242,10 @@
             // 
             // btnRandomAge
             // 
-            this.btnRandomAge.Location = new System.Drawing.Point(112, 126);
+            this.btnRandomAge.Location = new System.Drawing.Point(149, 155);
+            this.btnRandomAge.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnRandomAge.Name = "btnRandomAge";
-            this.btnRandomAge.Size = new System.Drawing.Size(47, 23);
+            this.btnRandomAge.Size = new System.Drawing.Size(63, 28);
             this.btnRandomAge.TabIndex = 19;
             this.btnRandomAge.Text = "Wiek";
             this.btnRandomAge.UseVisualStyleBackColor = true;
@@ -233,41 +253,46 @@
             // 
             // minAge
             // 
-            this.minAge.Location = new System.Drawing.Point(13, 129);
+            this.minAge.Location = new System.Drawing.Point(17, 159);
+            this.minAge.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.minAge.Name = "minAge";
-            this.minAge.Size = new System.Drawing.Size(42, 20);
+            this.minAge.Size = new System.Drawing.Size(56, 22);
             this.minAge.TabIndex = 20;
             // 
             // maxAge
             // 
-            this.maxAge.Location = new System.Drawing.Point(64, 129);
+            this.maxAge.Location = new System.Drawing.Point(85, 159);
+            this.maxAge.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.maxAge.Name = "maxAge";
-            this.maxAge.Size = new System.Drawing.Size(42, 20);
+            this.maxAge.Size = new System.Drawing.Size(56, 22);
             this.maxAge.TabIndex = 21;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(15, 113);
+            this.label6.Location = new System.Drawing.Point(20, 139);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(24, 13);
+            this.label6.Size = new System.Drawing.Size(28, 16);
             this.label6.TabIndex = 22;
             this.label6.Text = "Min";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(61, 113);
+            this.label7.Location = new System.Drawing.Point(81, 139);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(27, 13);
+            this.label7.Size = new System.Drawing.Size(32, 16);
             this.label7.TabIndex = 23;
             this.label7.Text = "Max";
             // 
             // btnSend0
             // 
-            this.btnSend0.Location = new System.Drawing.Point(141, 26);
+            this.btnSend0.Location = new System.Drawing.Point(188, 32);
+            this.btnSend0.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnSend0.Name = "btnSend0";
-            this.btnSend0.Size = new System.Drawing.Size(128, 23);
+            this.btnSend0.Size = new System.Drawing.Size(171, 28);
             this.btnSend0.TabIndex = 25;
             this.btnSend0.Text = "Przekaż";
             this.btnSend0.UseVisualStyleBackColor = true;
@@ -275,9 +300,10 @@
             // 
             // btnSend1
             // 
-            this.btnSend1.Location = new System.Drawing.Point(146, 293);
+            this.btnSend1.Location = new System.Drawing.Point(195, 361);
+            this.btnSend1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnSend1.Name = "btnSend1";
-            this.btnSend1.Size = new System.Drawing.Size(62, 23);
+            this.btnSend1.Size = new System.Drawing.Size(83, 28);
             this.btnSend1.TabIndex = 26;
             this.btnSend1.Text = "Przekaż";
             this.btnSend1.UseVisualStyleBackColor = true;
@@ -286,24 +312,27 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(148, 207);
+            this.label8.Location = new System.Drawing.Point(197, 255);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(83, 13);
+            this.label8.Size = new System.Drawing.Size(102, 16);
             this.label8.TabIndex = 28;
             this.label8.Text = "Dodatek koniec";
             // 
             // tbNewItemEnd
             // 
-            this.tbNewItemEnd.Location = new System.Drawing.Point(148, 223);
+            this.tbNewItemEnd.Location = new System.Drawing.Point(197, 274);
+            this.tbNewItemEnd.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tbNewItemEnd.Name = "tbNewItemEnd";
-            this.tbNewItemEnd.Size = new System.Drawing.Size(121, 20);
+            this.tbNewItemEnd.Size = new System.Drawing.Size(160, 22);
             this.tbNewItemEnd.TabIndex = 27;
             // 
             // btnClear
             // 
-            this.btnClear.Location = new System.Drawing.Point(165, 267);
+            this.btnClear.Location = new System.Drawing.Point(220, 329);
+            this.btnClear.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnClear.Name = "btnClear";
-            this.btnClear.Size = new System.Drawing.Size(99, 23);
+            this.btnClear.Size = new System.Drawing.Size(132, 28);
             this.btnClear.TabIndex = 29;
             this.btnClear.Text = "Wyczyść";
             this.btnClear.UseVisualStyleBackColor = true;
@@ -311,9 +340,10 @@
             // 
             // btnInc
             // 
-            this.btnInc.Location = new System.Drawing.Point(232, 129);
+            this.btnInc.Location = new System.Drawing.Point(309, 159);
+            this.btnInc.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnInc.Name = "btnInc";
-            this.btnInc.Size = new System.Drawing.Size(59, 23);
+            this.btnInc.Size = new System.Drawing.Size(79, 28);
             this.btnInc.TabIndex = 30;
             this.btnInc.Text = "Serial";
             this.btnInc.UseVisualStyleBackColor = true;
@@ -321,9 +351,9 @@
             // 
             // EditColumns
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(654, 331);
+            this.ClientSize = new System.Drawing.Size(872, 407);
             this.Controls.Add(this.btnInc);
             this.Controls.Add(this.btnClear);
             this.Controls.Add(this.label8);
@@ -353,6 +383,7 @@
             this.Controls.Add(this.LeftSlice);
             this.Controls.Add(this.btnSliceLeft);
             this.Controls.Add(this.cbColumnForEdit);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "EditColumns";
             this.Text = "EditColumns";
             this.Load += new System.EventHandler(this.EditColumns_Load);

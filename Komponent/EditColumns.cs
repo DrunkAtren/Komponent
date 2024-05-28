@@ -404,7 +404,6 @@ namespace Komponent
             // Wywołaj funkcję ShowNewDataList, aby zaktualizować DataGridView
             ShowNewDataList();
         }
-
     }
 }
 

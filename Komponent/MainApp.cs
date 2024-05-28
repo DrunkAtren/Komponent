@@ -78,8 +78,14 @@ namespace Komponent
         public MainApp()
         {
             InitializeComponent();
+            setComboBox();
             imp_dat = new import_datas(dgvDataSetMainApp);
-            exp_dat = new export_to_file();
+            //exp_dat = new export_to_file();
+            
+
+
+            exp_dat = new export_to_file(fileName, fileType);
+
         }
 
         public List<string> GetColumnData(string columnName)
@@ -136,6 +142,13 @@ namespace Komponent
             myForm.Show();
         }
 
+        private void addDataButton_Click(object sender, EventArgs e)
+        {
+            ClearTable();
+
+            imp_dat.ImportCustomData();
+        }
+
         private void btnDefaultDataSet_Click(object sender, EventArgs e)
         {
             ClearTable();
@@ -187,5 +200,22 @@ namespace Komponent
         {
             exp_dat.ExportDataCreate(dgvDataSetMainApp);
         }
+
+        private void setComboBox()
+        {
+
+            fileType.Items.Add("text");
+            fileType.Items.Add("csv");
+            fileType.Items.Add("json");
+            
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        
     }
 }

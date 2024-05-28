@@ -3,14 +3,38 @@ using System;
 using System.IO;
 using System.Windows.Forms;
 using Newtonsoft.Json.Linq;
+using System.Windows.Forms.VisualStyles;
 
 namespace Komponent
 {
     public class export_to_file : IDisposable
     {
-        private string exported_format = "text";
+
+        private string exported_format = "TEXT";
         private string export_file_name = "dataset1";
         private string export_destination = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
+
+        private TextBox fileName;
+        private ComboBox fileType;
+
+        public export_to_file(TextBox fileName, ComboBox fileType)
+        {
+            this.fileName = fileName;
+            this.fileType = fileType;
+            //this.fileDestination = fileDestination;
+        }
+
+        private void setValues()
+        {
+            exported_format = fileType.Text;
+            export_file_name = fileName.Text;
+            //export_destination = fileDestination.Text;
+        }
+
+        
+
+        
+
 
         public string getFilename()
         {
@@ -121,6 +145,8 @@ namespace Komponent
 
         public void ExportDataCreate(DataGridView dataGridView)
         {
+            setValues();
+
             string fileName = Path.Combine(export_destination, export_file_name);
             ExportFormat format = ExportFormat.CSV;
             if (exported_format == "json") format = ExportFormat.JSON;

@@ -1,5 +1,7 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using System.Windows.Forms;
 using Newtonsoft.Json.Linq; // Dodaj referencję do Newtonsoft.Json
 
@@ -114,9 +116,128 @@ namespace Komponent
             }
         }
 
+        public void ImportCustomData()
+        {
+            string customFilePath = "";
+            // Open new file
+            using (OpenFileDialog openFileDialog = new OpenFileDialog())
+            {
+                if (openFileDialog.ShowDialog() == DialogResult.OK)
+                {
+                    customFilePath = openFileDialog.FileName;
+                }
+            }
+
+            try
+            {
+                if (customFilePath.EndsWith(".json", StringComparison.OrdinalIgnoreCase))
+                {
+                    using (StreamReader sr = new StreamReader(customFilePath))
+                    {
+                        string jsonContent = sr.ReadToEnd();
+                        JArray jsonArray = JArray.Parse(jsonContent);
+                        foreach (var item in jsonArray)
+                        {
+                            if (_dataGridView.ColumnCount == 0)
+                            {
+                                foreach (JProperty property in item)
+                                {
+                                    _dataGridView.Columns.Add(property.Name, property.Name);
+                                }
+                            }
+
+                            List<string> rowData = new List<string>();
+                            foreach (JProperty property in item)
+                            {
+                                rowData.Add(property.Value.ToString());
+                            }
+                            _dataGridView.Rows.Add(rowData.ToArray());
+                        }
+                    }
+                }
+                else if (customFilePath.EndsWith(".csv", StringComparison.OrdinalIgnoreCase))
+                {
+                    using (StreamReader sr = new StreamReader(customFilePath))
+                    {
+                        string line;
+                        while ((line = sr.ReadLine()) != null)
+                        {
+                            if (_dataGridView.ColumnCount == 0)
+                            {
+                                string[] headers = line.Split(',');
+                                foreach (string header in headers)
+                                {
+                                    // Sprawdź, czy nazwa kolumny nie jest pusta
+                                    if (!string.IsNullOrWhiteSpace(header))
+                                    {
+                                        _dataGridView.Columns.Add(header, header);
+                                    }
+                                }
+                            }
+                            else
+                            {
+                                // Usuń dodatkową kolumnę na końcu, jeśli istnieje
+                                if (_dataGridView.ColumnCount == line.Split(',').Length)
+                                {
+                                    string[] data = line.Split(',');
+                                    _dataGridView.Rows.Add(data.Take(data.Length).ToArray());
+                                }
+                                else
+                                {
+                                    _dataGridView.Rows.Add(line.Split(','));
+                                }
+                            }
+                        }
+                    }
+                }
+                else if (customFilePath.EndsWith(".txt", StringComparison.OrdinalIgnoreCase))
+                {
+                    using (StreamReader sr = new StreamReader(customFilePath))
+                    {
+                        string line;
+                        while ((line = sr.ReadLine()) != null)
+                        {
+                            if (_dataGridView.ColumnCount == 0)
+                            {
+                                string[] headers = line.Split('\t'); // Rozdziel nagłówki za pomocą tabulatora
+                                foreach (string header in headers)
+                                {
+                                    // Sprawdź, czy nazwa kolumny nie jest pusta
+                                    if (!string.IsNullOrWhiteSpace(header))
+                                    {
+                                        _dataGridView.Columns.Add(header, header);
+                                    }
+                                }
+                            }
+                            else
+                            {
+                                string[] words = line.Split('\t'); // Rozdziel słowa za pomocą tabulatora
+                                _dataGridView.Rows.Add(words);
+                            }
+                        }
+                    }
+                }
+
+
+                MessageBox.Show("Dane zostały zaimportowane pomyślnie.", "Sukces", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Wystąpił błąd podczas importowania danych: {ex.Message}", "Błąd", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+
+
+
         public void Dispose()
         {
             _dataGridView = null;
         }
+
+        
+
     }
 }
+
+
