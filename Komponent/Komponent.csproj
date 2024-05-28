@@ -140,5 +140,8 @@
     <Folder Include="src\dataset\" />
     <Folder Include="src\img\" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="HistogramW.dll" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
