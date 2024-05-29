@@ -42,13 +42,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.maxColumnHeight = new System.Windows.Forms.NumericUpDown();
             this.btnClearTable = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.fileType = new System.Windows.Forms.ComboBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.fileName = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.addDataButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDataSetMainApp)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.maxColumnHeight)).BeginInit();
             this.SuspendLayout();
@@ -56,10 +50,10 @@
             // dgvDataSetMainApp
             // 
             this.dgvDataSetMainApp.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvDataSetMainApp.Location = new System.Drawing.Point(12, 111);
+            this.dgvDataSetMainApp.Location = new System.Drawing.Point(12, 66);
             this.dgvDataSetMainApp.Name = "dgvDataSetMainApp";
             this.dgvDataSetMainApp.RowHeadersWidth = 51;
-            this.dgvDataSetMainApp.Size = new System.Drawing.Size(1352, 368);
+            this.dgvDataSetMainApp.Size = new System.Drawing.Size(1352, 413);
             this.dgvDataSetMainApp.TabIndex = 0;
             // 
             // btnAddColumn
@@ -90,7 +84,7 @@
             // 
             // btnGoToEditColumn
             // 
-            this.btnGoToEditColumn.Location = new System.Drawing.Point(880, 21);
+            this.btnGoToEditColumn.Location = new System.Drawing.Point(758, 20);
             this.btnGoToEditColumn.Name = "btnGoToEditColumn";
             this.btnGoToEditColumn.Size = new System.Drawing.Size(127, 23);
             this.btnGoToEditColumn.TabIndex = 4;
@@ -100,7 +94,7 @@
             // 
             // btnGoToHistogram
             // 
-            this.btnGoToHistogram.Location = new System.Drawing.Point(639, 21);
+            this.btnGoToHistogram.Location = new System.Drawing.Point(517, 20);
             this.btnGoToHistogram.Name = "btnGoToHistogram";
             this.btnGoToHistogram.Size = new System.Drawing.Size(72, 23);
             this.btnGoToHistogram.TabIndex = 5;
@@ -110,7 +104,7 @@
             // 
             // btnGoToCreateDataSet
             // 
-            this.btnGoToCreateDataSet.Location = new System.Drawing.Point(526, 21);
+            this.btnGoToCreateDataSet.Location = new System.Drawing.Point(404, 21);
             this.btnGoToCreateDataSet.Name = "btnGoToCreateDataSet";
             this.btnGoToCreateDataSet.Size = new System.Drawing.Size(107, 23);
             this.btnGoToCreateDataSet.TabIndex = 6;
@@ -120,7 +114,7 @@
             // 
             // btnAddDataSet
             // 
-            this.btnAddDataSet.Location = new System.Drawing.Point(420, 21);
+            this.btnAddDataSet.Location = new System.Drawing.Point(298, 20);
             this.btnAddDataSet.Name = "btnAddDataSet";
             this.btnAddDataSet.Size = new System.Drawing.Size(100, 23);
             this.btnAddDataSet.TabIndex = 8;
@@ -130,7 +124,7 @@
             // 
             // btnDefaultDataSet
             // 
-            this.btnDefaultDataSet.Location = new System.Drawing.Point(717, 21);
+            this.btnDefaultDataSet.Location = new System.Drawing.Point(595, 20);
             this.btnDefaultDataSet.Name = "btnDefaultDataSet";
             this.btnDefaultDataSet.Size = new System.Drawing.Size(157, 23);
             this.btnDefaultDataSet.TabIndex = 9;
@@ -171,7 +165,7 @@
             // 
             // btnClearTable
             // 
-            this.btnClearTable.Location = new System.Drawing.Point(1012, 21);
+            this.btnClearTable.Location = new System.Drawing.Point(891, 21);
             this.btnClearTable.Name = "btnClearTable";
             this.btnClearTable.Size = new System.Drawing.Size(157, 23);
             this.btnClearTable.TabIndex = 14;
@@ -179,87 +173,17 @@
             this.btnClearTable.UseVisualStyleBackColor = true;
             this.btnClearTable.Click += new System.EventHandler(this.btnClearTable_Click);
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(208, 73);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(118, 23);
-            this.button1.TabIndex = 15;
-            this.button1.Text = "Eksportuj tabele";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // contextMenuStrip1
             // 
             this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
-            // fileType
-            // 
-            this.fileType.FormattingEnabled = true;
-            this.fileType.Location = new System.Drawing.Point(12, 74);
-            this.fileType.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.fileType.Name = "fileType";
-            this.fileType.Size = new System.Drawing.Size(92, 21);
-            this.fileType.TabIndex = 18;
-            this.fileType.Text = "text";
-            this.fileType.SelectedIndexChanged += new System.EventHandler(this.fileType_SelectedIndexChanged);
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(13, 58);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(50, 13);
-            this.label4.TabIndex = 21;
-            this.label4.Text = "Typ pliku";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
-            // 
-            // fileName
-            // 
-            this.fileName.Location = new System.Drawing.Point(117, 76);
-            this.fileName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.fileName.Name = "fileName";
-            this.fileName.Size = new System.Drawing.Size(76, 20);
-            this.fileName.TabIndex = 22;
-            this.fileName.Text = "deafult_text";
-            this.fileName.TextChanged += new System.EventHandler(this.fileName_TextChanged);
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(115, 60);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(65, 13);
-            this.label5.TabIndex = 23;
-            this.label5.Text = "Nazwa pliku";
-            this.label5.Click += new System.EventHandler(this.label5_Click);
-            // 
-            // addDataButton
-            // 
-            this.addDataButton.Location = new System.Drawing.Point(717, 58);
-            this.addDataButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.addDataButton.Name = "addDataButton";
-            this.addDataButton.Size = new System.Drawing.Size(157, 19);
-            this.addDataButton.TabIndex = 24;
-            this.addDataButton.Text = "Wgraj dane";
-            this.addDataButton.UseVisualStyleBackColor = true;
-            this.addDataButton.Click += new System.EventHandler(this.addDataButton_Click);
-            // 
             // MainApp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1378, 509);
-            this.Controls.Add(this.addDataButton);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.fileName);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.fileType);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.btnClearTable);
             this.Controls.Add(this.maxColumnHeight);
             this.Controls.Add(this.label2);
@@ -299,12 +223,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.NumericUpDown maxColumnHeight;
         private System.Windows.Forms.Button btnClearTable;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
-        private System.Windows.Forms.ComboBox fileType;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox fileName;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button addDataButton;
     }
 }
