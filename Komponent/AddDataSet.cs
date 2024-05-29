@@ -14,11 +14,37 @@ namespace Komponent
     public partial class AddDataSet : Form
     {
         private MainApp mainAppForm;
+        private string defaultDictPath = "default";
+        private Boolean autoImportDict = false;
 
-        public AddDataSet(MainApp mainApp)
+        public Boolean getAutoImportDict ()
         {
+            return autoImportDict;
+        }
+
+        public void setAutoImportDict(Boolean value)
+        {
+            autoImportDict = value;
+        }
+
+        public string getDefaultDictPath()
+        {
+            return defaultDictPath;
+        }
+
+        public void setDefaultDictPath(string dictPath)
+        {
+            defaultDictPath = dictPath;
+        }
+
+
+        public AddDataSet(MainApp mainApp, Boolean val, string PathFile)
+        {
+
             InitializeComponent();
             mainAppForm = mainApp;
+            autoImportDict=val;
+            defaultDictPath = PathFile;
             PopulateColumnNamesFromMainApp();
         }
 
@@ -32,22 +58,40 @@ namespace Komponent
                     cbSelectColumnFromMainApp.Items.Add(columnName);
                 }
             }
+            if (autoImportDict)
+            {
+                string projectDirectory1 = Directory.GetParent(AppDomain.CurrentDomain.BaseDirectory).Parent.FullName;
+                string projectDirectory = Directory.GetParent(projectDirectory1).Parent.FullName;
+                string filePath = Path.Combine(projectDirectory + "/Komponent/" + defaultDictPath);
+                LoadDataFromFile(filePath);
+            }
         }
 
         private void btnSelectDataSet_Click(object sender, EventArgs e)
         {
             // Open File Dialog to select a .txt file
-            using (OpenFileDialog openFileDialog = new OpenFileDialog())
+            if (defaultDictPath == "default")
             {
-                openFileDialog.Filter = "Text files (*.txt)|*.txt|All files (*.*)|*.*";
-                openFileDialog.Title = "Select a Text File";
-
-                if (openFileDialog.ShowDialog() == DialogResult.OK)
+                using (OpenFileDialog openFileDialog = new OpenFileDialog())
                 {
-                    string filePath = openFileDialog.FileName;
-                    LoadDataFromFile(filePath);
+                    openFileDialog.Filter = "Text files (*.txt)|*.txt|All files (*.*)|*.*";
+                    openFileDialog.Title = "Select a Text File";
+
+                    if (openFileDialog.ShowDialog() == DialogResult.OK)
+                    {
+                        string filePath = openFileDialog.FileName;
+                        LoadDataFromFile(filePath);
+                    }
                 }
             }
+            else
+            {
+                string projectDirectory1 = Directory.GetParent(AppDomain.CurrentDomain.BaseDirectory).Parent.FullName;
+                string projectDirectory = Directory.GetParent(projectDirectory1).Parent.FullName;
+                string filePath = Path.Combine(projectDirectory + "/Komponent/" + defaultDictPath);
+                LoadDataFromFile(filePath);
+            }
+            
         }
 
         private void LoadDataFromFile(string filePath)
@@ -76,15 +120,20 @@ namespace Komponent
                 else
                 {
                     MessageBox.Show("The file is empty.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                }
+                }     
             }
             catch (Exception ex)
             {
                 MessageBox.Show("An error occurred while reading the file: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+
+            if (autoImportDict)
+            {
+                fillList();
+            }
         }
 
-        private void btnAddToDVG_Click(object sender, EventArgs e)
+        private void fillList()
         {
             var sum = dgvSelectedDataSet.Rows.Cast<DataGridViewRow>()
                 .Where(row => !string.IsNullOrEmpty(row.Cells[1].Value?.ToString()))
@@ -160,17 +209,25 @@ namespace Komponent
                     }
                 }
             }
+            if (!autoImportDict)
+            {
+                List<string> dataToAdd = tabela.ToList();
+                if (selectedColumn != null)
+                {
+                    MainApp mainApp = (MainApp)this.MdiParent; // Adjust this as needed if MainApp is not the MdiParent
+                    mainAppForm.AddDataToColumn(selectedColumn, dataToAdd);
+                }
+                else
+                {
+                    MessageBox.Show("Selected column is null or empty.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            
+        }
 
-            List<string> dataToAdd = tabela.ToList();
-            if (selectedColumn != null)
-            {
-                MainApp mainApp = (MainApp)this.MdiParent; // Adjust this as needed if MainApp is not the MdiParent
-                mainAppForm.AddDataToColumn(selectedColumn, dataToAdd);
-            }
-            else
-            {
-                MessageBox.Show("Selected column is null or empty.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+        private void btnAddToDVG_Click(object sender, EventArgs e)
+        {
+            fillList();
         }
 
         public static List<int> RandomIndexes(int size)

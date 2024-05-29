@@ -93,6 +93,9 @@
     <Compile Include="Histogram.Designer.cs">
       <DependentUpon>Histogram.cs</DependentUpon>
     </Compile>
+    <Compile Include="histogram_api.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="IMainApp.cs" />
     <Compile Include="import_table.cs" />
     <Compile Include="MainApp.cs">
@@ -145,9 +148,6 @@
   <ItemGroup>
     <Folder Include="src\dataset\" />
     <Folder Include="src\img\" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="HistogramW.dll" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

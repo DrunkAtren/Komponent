@@ -15,6 +15,26 @@ namespace Komponent
     {
         private import_datas imp_dat;
         private export_to_file exp_dat;
+        private Histogram hist;
+        private AddDataSet  addData;
+        private int sc_value;
+        private int brd_value;
+        private int row_ite;
+        private Boolean tr_val;
+        private string dictPath;
+        private void sethistvalues()
+        {
+            hist.setScaleStepValue(sc_value);
+            hist.setLegendItemsPerRow(row_ite);
+            hist.setBarWidthValue(brd_value);
+        }
+        private void setaddvalues()
+        {
+            addData.setDefaultDictPath(dictPath);
+            addData.setAutoImportDict(tr_val);
+            Console.WriteLine(tr_val);
+        }
+
         public DataGridViewRowCollection GetRows()
         {
             return dgvDataSetMainApp.Rows;
@@ -81,11 +101,7 @@ namespace Komponent
             InitializeComponent();
             setComboBox();
             imp_dat = new import_datas(dgvDataSetMainApp);
-            //exp_dat = new export_to_file();
-            
-
-
-            exp_dat = new export_to_file(fileName, fileType);
+            exp_dat = new export_to_file();
 
         }
 
@@ -139,8 +155,9 @@ namespace Komponent
 
         private void btnAddDataSet_Click(object sender, EventArgs e)
         {
-            var myForm = new AddDataSet(this);
-            myForm.Show();
+                addData = new AddDataSet(this, tr_val, dictPath );
+                addData.Show();
+            setaddvalues();
         }
 
         private void addDataButton_Click(object sender, EventArgs e)
@@ -209,7 +226,9 @@ namespace Komponent
             fileType.Items.Add("text");
             fileType.Items.Add("csv");
             fileType.Items.Add("json");
-            
+            comboBox2.Items.AddRange(Enum.GetNames(typeof(KnownColor)));
+            comboBox3.Items.AddRange(Enum.GetNames(typeof(KnownColor)));
+
 
         }
 
@@ -222,8 +241,9 @@ namespace Komponent
 
         private void btnGoToHistogram_Click(object sender, EventArgs e)
         {
-                var myForm = new Histogram(this);
-                myForm.Show();
+                hist = new Histogram(this);
+                sethistvalues();
+                hist.Show();
 
         }
 
@@ -273,5 +293,167 @@ namespace Komponent
         {
 
         }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label11_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label12_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label13_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            fileType.SelectedIndex = 2;
+            fileName.Text = "default_data";
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            imp_dat.setImportExtension(fileType.Text);
+            imp_dat.setImportFilename(fileName.Text);
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            comboBox1.SelectedIndex = 0;
+            fileName.Text = "exported_data_set";
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            exp_dat.setFormat(comboBox1.Text);
+            exp_dat.setFilename(textBox1.Text);
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            numericUpDown3.Value = 20;
+            numericUpDown2.Value = 20;
+            numericUpDown1.Value = 4;
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            sc_value = (int)numericUpDown2.Value;
+            row_ite = (int)numericUpDown1.Value;
+            brd_value = (int)numericUpDown3.Value;
+        }
+
+        private void label15_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label17_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            checkBox1.Checked = false;
+            textBox2.Text = "src/dictionares/kraje.txt";
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            dictPath =  textBox2.Text;
+            tr_val = checkBox1.Checked;
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            int borderThickness = (int)numericUpDown5.Value;
+
+            // Set the border thickness for all cells in the DataGridView
+            dgvDataSetMainApp.AdvancedCellBorderStyle.All = DataGridViewAdvancedCellBorderStyle.Single;
+
+            // Update the border thickness
+            dgvDataSetMainApp.AdvancedCellBorderStyle.Top = (DataGridViewAdvancedCellBorderStyle)borderThickness;
+            dgvDataSetMainApp.AdvancedCellBorderStyle.Bottom = (DataGridViewAdvancedCellBorderStyle)borderThickness;
+            dgvDataSetMainApp.AdvancedCellBorderStyle.Left = (DataGridViewAdvancedCellBorderStyle)borderThickness;
+            dgvDataSetMainApp.AdvancedCellBorderStyle.Right = (DataGridViewAdvancedCellBorderStyle)borderThickness;
+        }
+
+        
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+
+            int borderThickness = (int)numericUpDown5.Value;
+
+            // Set the cell border style to Single
+            dgvDataSetMainApp.CellBorderStyle = DataGridViewCellBorderStyle.Single;
+
+            // Set the desired border width
+            dgvDataSetMainApp.AdvancedCellBorderStyle.Top = (DataGridViewAdvancedCellBorderStyle)borderThickness;
+            dgvDataSetMainApp.AdvancedCellBorderStyle.Bottom = (DataGridViewAdvancedCellBorderStyle)borderThickness;
+            dgvDataSetMainApp.AdvancedCellBorderStyle.Left = (DataGridViewAdvancedCellBorderStyle)borderThickness;
+            dgvDataSetMainApp.AdvancedCellBorderStyle.Right = (DataGridViewAdvancedCellBorderStyle)borderThickness;
+
+
+            if (comboBox2.SelectedIndex != -1)
+            {
+                Color selectedColor = Color.FromName(comboBox2.SelectedItem.ToString());
+
+                // Loop through each cell in the DataGridView
+                foreach (DataGridViewRow row in dgvDataSetMainApp.Rows)
+                {
+                    foreach (DataGridViewCell cell in row.Cells)
+                    {
+                        // Set the background color of the cell
+                        cell.Style.BackColor = selectedColor;
+                    }
+                }
+            }
+
+
+            if (comboBox3.SelectedIndex != -1)
+            {
+                Color selectedColor2 = Color.FromName(comboBox3.SelectedItem.ToString());
+                foreach (DataGridViewRow row in dgvDataSetMainApp.Rows)
+                {
+                    foreach (DataGridViewCell cell in row.Cells)
+                    {
+                        cell.Style.ForeColor = selectedColor2; // Możesz zmienić na dowolny inny kolor
+                    }
+                }
+            }
+
+
+        }
+
+        private void label18_Click(object sender, EventArgs e)
+        {
+
+        }
     }
+
 }

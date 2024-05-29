@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Data;
 using System.Windows.Forms;
-using HistogramW;
 
 namespace Komponent
 {
@@ -12,6 +11,47 @@ namespace Komponent
         private HistogramComponent histogram;
         private bool is3D = false;
         private bool histogramGenerated = false;
+
+        private int scaleStepValue = 20;
+        private int barWidthValue = 20;
+        private int legendItemsPerRow = 4;
+
+        public int getScaleStepValue()
+        {
+            return scaleStepValue;
+        }
+
+        public int getBarWidthValue()
+        {
+            return barWidthValue;
+        }
+
+        public int getLegendItemsPerRow()
+        {
+            return legendItemsPerRow;
+        }
+
+        public void setScaleStepValue(int step_value)
+        {
+            scaleStepValue = step_value;
+        }
+
+        public void setBarWidthValue(int bar_value)
+        {
+            barWidthValue = bar_value;
+        }
+
+        public void setLegendItemsPerRow(int items_pew_row)
+        {
+            legendItemsPerRow = items_pew_row;
+        }
+
+        private void setValues()
+        {
+            histogram.setLegendItemsPerRow(legendItemsPerRow);
+            histogram.setBarWidthValue(barWidthValue);
+            histogram.setScaleStepValue(scaleStepValue);
+        }
 
         public Histogram(MainApp mainApp)
         {
@@ -34,6 +74,8 @@ namespace Komponent
                 MessageBox.Show("Brak kolumn do generowania.");
                 return;
             }
+
+            
 
             foreach (string columnName in columnNames)
             {
@@ -61,6 +103,7 @@ namespace Komponent
         {
             DataTable dataTable = GetDataFromSelectedColumn(columnName);
             histogram = new HistogramComponent(columnName);
+            setValues();
             histogram.LoadData(dataTable);
             histogramGenerated = true; // Ustawienie flagi, że histogram został wygenerowany
             histogramPanel.Invalidate(); // Odśwież panel
@@ -136,6 +179,11 @@ namespace Komponent
         }
 
         private void Histogram_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
         {
 
         }
