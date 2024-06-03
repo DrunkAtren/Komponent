@@ -48,19 +48,17 @@
             // dgvDataSetMainApp
             // 
             this.dgvDataSetMainApp.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvDataSetMainApp.Location = new System.Drawing.Point(20, 60);
-            this.dgvDataSetMainApp.Margin = new System.Windows.Forms.Padding(4);
+            this.dgvDataSetMainApp.Location = new System.Drawing.Point(15, 49);
             this.dgvDataSetMainApp.Name = "dgvDataSetMainApp";
             this.dgvDataSetMainApp.RowHeadersWidth = 51;
-            this.dgvDataSetMainApp.Size = new System.Drawing.Size(1799, 469);
+            this.dgvDataSetMainApp.Size = new System.Drawing.Size(1349, 381);
             this.dgvDataSetMainApp.TabIndex = 0;
             // 
             // btnAddColumn
             // 
-            this.btnAddColumn.Location = new System.Drawing.Point(147, 27);
-            this.btnAddColumn.Margin = new System.Windows.Forms.Padding(4);
+            this.btnAddColumn.Location = new System.Drawing.Point(110, 22);
             this.btnAddColumn.Name = "btnAddColumn";
-            this.btnAddColumn.Size = new System.Drawing.Size(33, 28);
+            this.btnAddColumn.Size = new System.Drawing.Size(25, 23);
             this.btnAddColumn.TabIndex = 1;
             this.btnAddColumn.Text = ">";
             this.btnAddColumn.UseVisualStyleBackColor = true;
@@ -69,27 +67,24 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(17, 10);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(13, 8);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(99, 16);
+            this.label1.Size = new System.Drawing.Size(79, 13);
             this.label1.TabIndex = 2;
             this.label1.Text = "Dodaj Kolumne";
             // 
             // tbColumnName
             // 
-            this.tbColumnName.Location = new System.Drawing.Point(16, 28);
-            this.tbColumnName.Margin = new System.Windows.Forms.Padding(4);
+            this.tbColumnName.Location = new System.Drawing.Point(12, 23);
             this.tbColumnName.Name = "tbColumnName";
-            this.tbColumnName.Size = new System.Drawing.Size(132, 22);
+            this.tbColumnName.Size = new System.Drawing.Size(100, 20);
             this.tbColumnName.TabIndex = 3;
             // 
             // btnGoToEditColumn
             // 
-            this.btnGoToEditColumn.Location = new System.Drawing.Point(663, 23);
-            this.btnGoToEditColumn.Margin = new System.Windows.Forms.Padding(4);
+            this.btnGoToEditColumn.Location = new System.Drawing.Point(497, 22);
             this.btnGoToEditColumn.Name = "btnGoToEditColumn";
-            this.btnGoToEditColumn.Size = new System.Drawing.Size(169, 28);
+            this.btnGoToEditColumn.Size = new System.Drawing.Size(127, 23);
             this.btnGoToEditColumn.TabIndex = 4;
             this.btnGoToEditColumn.Text = "Edytowanie Kolumny >";
             this.btnGoToEditColumn.UseVisualStyleBackColor = true;
@@ -97,10 +92,9 @@
             // 
             // btnGoToHistogram
             // 
-            this.btnGoToHistogram.Location = new System.Drawing.Point(840, 25);
-            this.btnGoToHistogram.Margin = new System.Windows.Forms.Padding(4);
+            this.btnGoToHistogram.Location = new System.Drawing.Point(630, 23);
             this.btnGoToHistogram.Name = "btnGoToHistogram";
-            this.btnGoToHistogram.Size = new System.Drawing.Size(96, 28);
+            this.btnGoToHistogram.Size = new System.Drawing.Size(72, 23);
             this.btnGoToHistogram.TabIndex = 5;
             this.btnGoToHistogram.Text = "Histogram >";
             this.btnGoToHistogram.UseVisualStyleBackColor = true;
@@ -108,10 +102,9 @@
             // 
             // btnGoToCreateDataSet
             // 
-            this.btnGoToCreateDataSet.Location = new System.Drawing.Point(512, 25);
-            this.btnGoToCreateDataSet.Margin = new System.Windows.Forms.Padding(4);
+            this.btnGoToCreateDataSet.Location = new System.Drawing.Point(384, 23);
             this.btnGoToCreateDataSet.Name = "btnGoToCreateDataSet";
-            this.btnGoToCreateDataSet.Size = new System.Drawing.Size(143, 28);
+            this.btnGoToCreateDataSet.Size = new System.Drawing.Size(107, 23);
             this.btnGoToCreateDataSet.TabIndex = 6;
             this.btnGoToCreateDataSet.Text = "Stwórz Słownik >";
             this.btnGoToCreateDataSet.UseVisualStyleBackColor = true;
@@ -119,10 +112,9 @@
             // 
             // btnAddDataSet
             // 
-            this.btnAddDataSet.Location = new System.Drawing.Point(371, 23);
-            this.btnAddDataSet.Margin = new System.Windows.Forms.Padding(4);
+            this.btnAddDataSet.Location = new System.Drawing.Point(278, 23);
             this.btnAddDataSet.Name = "btnAddDataSet";
-            this.btnAddDataSet.Size = new System.Drawing.Size(133, 28);
+            this.btnAddDataSet.Size = new System.Drawing.Size(100, 23);
             this.btnAddDataSet.TabIndex = 8;
             this.btnAddDataSet.Text = "Dodaj Słownik";
             this.btnAddDataSet.UseVisualStyleBackColor = true;
@@ -130,10 +122,9 @@
             // 
             // btnDefaultDataSet
             // 
-            this.btnDefaultDataSet.Location = new System.Drawing.Point(944, 23);
-            this.btnDefaultDataSet.Margin = new System.Windows.Forms.Padding(4);
+            this.btnDefaultDataSet.Location = new System.Drawing.Point(708, 22);
             this.btnDefaultDataSet.Name = "btnDefaultDataSet";
-            this.btnDefaultDataSet.Size = new System.Drawing.Size(209, 28);
+            this.btnDefaultDataSet.Size = new System.Drawing.Size(157, 23);
             this.btnDefaultDataSet.TabIndex = 9;
             this.btnDefaultDataSet.Text = "Wgraj Podstawoe Dane";
             this.btnDefaultDataSet.UseVisualStyleBackColor = true;
@@ -141,10 +132,9 @@
             // 
             // btnSetMaxRek
             // 
-            this.btnSetMaxRek.Location = new System.Drawing.Point(325, 28);
-            this.btnSetMaxRek.Margin = new System.Windows.Forms.Padding(4);
+            this.btnSetMaxRek.Location = new System.Drawing.Point(244, 23);
             this.btnSetMaxRek.Name = "btnSetMaxRek";
-            this.btnSetMaxRek.Size = new System.Drawing.Size(33, 28);
+            this.btnSetMaxRek.Size = new System.Drawing.Size(25, 23);
             this.btnSetMaxRek.TabIndex = 11;
             this.btnSetMaxRek.Text = ">";
             this.btnSetMaxRek.UseVisualStyleBackColor = true;
@@ -153,32 +143,29 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(184, 7);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(138, 6);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(120, 16);
+            this.label2.Size = new System.Drawing.Size(98, 13);
             this.label2.TabIndex = 12;
             this.label2.Text = "Ustaw Max Rekord";
             // 
             // maxColumnHeight
             // 
-            this.maxColumnHeight.Location = new System.Drawing.Point(188, 31);
-            this.maxColumnHeight.Margin = new System.Windows.Forms.Padding(4);
+            this.maxColumnHeight.Location = new System.Drawing.Point(141, 25);
             this.maxColumnHeight.Maximum = new decimal(new int[] {
             100000,
             0,
             0,
             0});
             this.maxColumnHeight.Name = "maxColumnHeight";
-            this.maxColumnHeight.Size = new System.Drawing.Size(129, 22);
+            this.maxColumnHeight.Size = new System.Drawing.Size(97, 20);
             this.maxColumnHeight.TabIndex = 13;
             // 
             // btnClearTable
             // 
-            this.btnClearTable.Location = new System.Drawing.Point(1161, 25);
-            this.btnClearTable.Margin = new System.Windows.Forms.Padding(4);
+            this.btnClearTable.Location = new System.Drawing.Point(871, 23);
             this.btnClearTable.Name = "btnClearTable";
-            this.btnClearTable.Size = new System.Drawing.Size(209, 28);
+            this.btnClearTable.Size = new System.Drawing.Size(157, 23);
             this.btnClearTable.TabIndex = 14;
             this.btnClearTable.Text = "Wyczyść Tabele";
             this.btnClearTable.UseVisualStyleBackColor = true;
@@ -186,9 +173,9 @@
             // 
             // MainApp
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1835, 545);
+            this.ClientSize = new System.Drawing.Size(1376, 443);
             this.Controls.Add(this.btnClearTable);
             this.Controls.Add(this.maxColumnHeight);
             this.Controls.Add(this.label2);
@@ -203,7 +190,6 @@
             this.Controls.Add(this.btnAddColumn);
             this.Controls.Add(this.dgvDataSetMainApp);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "MainApp";
             this.Text = "MainApp";
             this.Load += new System.EventHandler(this.MainApp_Load);
